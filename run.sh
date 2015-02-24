@@ -11,4 +11,4 @@ if [ ! -f /mcdata/server.properties ]; then
     cp /basicdata/server.properties /mcdata
 fi
 
-java -jar /mcdata/spigot-1.8.jar
+java -jar $JVM_OPTS /mcdata/spigot-1.8.jar
