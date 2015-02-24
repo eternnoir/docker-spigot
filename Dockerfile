@@ -19,6 +19,7 @@ ADD run.sh /
 
 WORKDIR /mcdata
 EXPOSE 25565
+ENV JVM_OPTS -Xmx1024M -Xms1024M
 VOLUME [ "/mcdata" ]
 CMD ["sh","/run.sh"]
 
